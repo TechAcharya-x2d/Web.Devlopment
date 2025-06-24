@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- ब्राउज़र को बताता है कि ये HTML5 डॉक्युमेंट है -->
+  <meta charset="UTF-8">
+
+  <!-- Responsive design के लिए -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- वेबसाइट का टाइटल जो ब्राउज़र टैब में दिखेगा -->
+  <title>HTML Structure & Meta Tags Guide</title>
+
+  <!-- SEO के लिए वेबसाइट का विवरण -->
+  <meta name="description" content="यह पेज HTML लिखने का तरीका, Head टैग्स, Meta, Title और अन्य बेसिक जानकारी समझाता है।">
+
+  <!-- SEO के लिए कीवर्ड -->
+  <meta name="keywords" content="HTML, Meta Tags, Title, Description, SEO, Web Design, Head Tags">
+
+  <!-- लेखक का नाम -->
+  <meta name="author" content="Aryan">
+
+  <!-- favicon जोड़ने के लिए (icon) -->
+  <link rel="icon" href="favicon.png" type="image/png">
+
+  <!-- CSS अंदर ही शामिल -->
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: #fff;
+      padding: 50px 20px;
+      text-align: center;
+      line-height: 1.6;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 30px;
+      color: #ffcc00;
+      text-shadow: 2px 2px 5px #000;
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      color: #ffd700;
+      margin: 40px 0 20px;
+    }
+
+    pre {
+      background: rgba(255, 255, 255, 0.1);
+      color: #00ffcc;
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 800px;
+      margin: auto;
+      font-size: 1rem;
+      overflow-x: auto;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+      text-align: left;
+    }
+
+    ul {
+      list-style: square inside;
+      max-width: 800px;
+      margin: 20px auto;
+      text-align: left;
+      padding-left: 0;
+    }
+
+    ul li {
+      margin-bottom: 10px;
+      color: #f5f5f5;
+    }
+
+    ul li strong {
+      color: #00ffff;
+    }
+
+    p {
+      max-width: 800px;
+      margin: 20px auto;
+      background: rgba(255,255,255,0.1);
+      padding: 15px;
+      border-left: 5px solid #00ffff;
+      border-radius: 5px;
+      color: #e0f7fa;
+      font-size: 1rem;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    }
+
+    code {
+      background: rgba(0, 0, 0, 0.4);
+      padding: 2px 6px;
+      border-radius: 4px;
+      color: #00e6e6;
+      font-weight: bold;
+      font-family: 'Courier New', monospace;
+    }
+
+    @media (max-width: 768px) {
+      body {
+        padding: 30px 15px;
+      }
+
+      h1 {
+        font-size: 2rem;
+      }
+
+      h2 {
+        font-size: 1.5rem;
+      }
+
+      pre, p, ul {
+        font-size: 0.95rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>📘 HTML Structure और Meta Tags की जानकारी</h1>
+
+  <h2>✅ HTML लिखने का सही तरीका:</h2>
+  <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+  &lt;head&gt;
+    ...सभी meta, title, link, script, etc.
+  &lt;/head&gt;
+  &lt;body&gt;
+    ...आपका वेबसाइट कंटेंट
+  &lt;/body&gt;
+&lt;/html&gt;
+  </pre>
+
+  <h2>🧠 Head टैग में क्या-क्या होता है?</h2>
+  <ul>
+    <li><strong>&lt;meta charset="UTF-8"&gt;</strong> — सभी भाषाओं और सिंबल को सपोर्ट करता है।</li>
+    <li><strong>&lt;meta name="viewport"&gt;</strong> — मोबाइल फ्रेंडली डिजाइन के लिए जरूरी।</li>
+    <li><strong>&lt;title&gt;</strong> — ब्राउज़र टैब में दिखने वाला नाम।</li>
+    <li><strong>&lt;meta name="description"&gt;</strong> — गूगल को बताता है आपकी साइट किस बारे में है।</li>
+    <li><strong>&lt;meta name="keywords"&gt;</strong> — SEO के लिए कीवर्ड (कम उपयोग होता है आजकल)।</li>
+    <li><strong>&lt;meta name="author"&gt;</strong> — साइट का लेखक कौन है।</li>
+    <li><strong>&lt;link rel="stylesheet"&gt;</strong> — CSS जोड़ने के लिए।</li>
+    <li><strong>&lt;script src="..."&gt;</strong> — JavaScript फाइल लिंक करने के लिए।</li>
+    <li><strong>&lt;link rel="icon"&gt;</strong> — साइट आइकन (favicon) सेट करने के लिए।</li>
+  </ul>
+
+  <h2>💡 Bonus टिप:</h2>
+  <p><code>&lt;head&gt;</code> का कंटेंट पेज पर <strong>दिखता नहीं</strong> है, लेकिन यह पेज की <strong>सुविधा, SEO, और तकनीकी जानकारी</strong> देने के लिए बहुत जरूरी है।</p>
+
+</body>
+</html>

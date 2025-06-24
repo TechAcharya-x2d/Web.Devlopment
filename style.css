@@ -1,0 +1,90 @@
+/* === Global Styles === */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: white;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* === Title === */
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  text-shadow: 2px 2px 5px #000;
+}
+
+/* === Card Container === */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+/* === Individual Card === */
+.card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 30px;
+  width: 100%;
+  max-width: 300px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  transform: rotateY(0deg);
+  transition: transform 0.4s ease, background 0.4s;
+  backdrop-filter: blur(10px);
+  box-sizing: border-box;
+}
+
+/* === Card Hover Effect === */
+.card:hover {
+  transform: rotateY(10deg) scale(1.05);
+  background: rgba(255, 255, 255, 0.15);
+}
+
+/* === Card Heading === */
+.card h2 {
+  font-size: 24px;
+  color: #ffcc00;
+  margin-bottom: 15px;
+}
+
+/* === Card Button === */
+.card button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #ffcc00;
+  color: #000;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.card button:hover {
+  background: #fff700;
+}
+
+/* === Responsive Fix === */
+@media (max-width: 768px) {
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .card {
+    width: 90%;
+    max-width: 340px;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+}
